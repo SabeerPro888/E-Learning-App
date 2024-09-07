@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    android:alpha="0.7"
+    >
+    <!--        android:src="@mipmap/ic_bartering_image"-->
+<!--        app:shapeAppearanceOverlay="@style/circular"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginLeft="140dp"-->
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="-21dp"
+        android:src="@drawable/booklogo"
+        app:shapeAppearanceOverlay="@style/circular" />
+
+    <TextView
+        style="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="168dp"
+        android:text="E-Learning "
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="194dp"
+        android:text="Learn With Fun"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="50dp"
+        android:layout_marginBottom="-40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:layout_gravity="center"
+                android:textSize="40dp"
+                android:layout_marginLeft="70dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+
+
+
+
+
+            <EditText
+                android:id="@+id/txtusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:drawableEnd="@drawable/baseline_check_24"
+                android:inputType="textEmailAddress"
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/txtpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:layout_toLeftOf="@+id/imgPasswordToggle"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <ImageButton
+                    android:id="@+id/imgPasswordToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/baseline_remove_red_eye_24"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:contentDescription="Toggle Password" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remember me"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.7"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password?"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/btnLogin"
+                android:text="Login"
+                android:textSize="25dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dont have an account?"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/txtSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

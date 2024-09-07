@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/app_bar_layout" />
+
+        <!-- Quiz Title -->
+
+        <EditText
+            android:id="@+id/quizTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Quiz Title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:background="@drawable/custom_card_background"
+            android:layout_marginTop="16dp"/>
+
+
+        <!-- Placeholder for Questions -->
+        <LinearLayout
+            android:id="@+id/questionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Button to Add More Questions -->
+        <Button
+            android:id="@+id/addQuestionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Question"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Submit Quiz Button -->
+        <Button
+            android:id="@+id/submitQuizButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Quiz"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

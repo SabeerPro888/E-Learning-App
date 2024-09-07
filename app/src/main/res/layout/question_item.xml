@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:padding="16dp">
+
+    <!-- Question Input -->
+    <EditText
+        android:id="@+id/questionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your question"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <!-- Choices RadioGroup -->
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <!-- Choice 1 -->
+        <RadioButton
+            android:id="@+id/choice1RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/choice1EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter choice 1"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+        <!-- Choice 2 -->
+        <RadioButton
+            android:id="@+id/choice2RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/choice2EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter choice 2"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+        <!-- Choice 3 -->
+        <RadioButton
+            android:id="@+id/choice3RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/choice3EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter choice 3"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+
+        <!-- Choice 4 -->
+        <RadioButton
+            android:id="@+id/choice4RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/choice4EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter choice 4"
+            android:textSize="16sp"
+            android:padding="8dp"/>
+    </RadioGroup>
+
+    <!-- Delete Question Button -->
+    <ImageView
+        android:id="@+id/deleteQuestionButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/baseline_delete_24"
+        android:contentDescription="Delete Question"
+        android:layout_gravity="end"/>
+
+</LinearLayout>
